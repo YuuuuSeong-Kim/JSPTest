@@ -11,6 +11,8 @@ C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2899255133.inde
 \day1227\src\main\java
 C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4195320874.index
 \day1221\src\main\java
+C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1558332746.index
+\day0102_d\src\main\java
 C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2612592887.index
 \day1228\src\main\java
 C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3638700282.index

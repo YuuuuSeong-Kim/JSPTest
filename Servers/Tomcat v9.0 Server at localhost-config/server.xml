@@ -162,14 +162,19 @@
       
       
       <Context docBase="day0102_c" path="/day0102_c" reloadable="true" source="org.eclipse.jst.jee.server:day0102_c">
-      <Resource name="myoracle" auth="Container"
-              type="javax.sql.DataSource" driverClassName="oracle.jdbc.driver.OracleDriver"
-              url="jdbc:oracle:thin:@localhost:1521:xe"
-              username="c##madang" password="madang" maxTotal="20" maxIdle="10"
-              maxWaitMillis="-1"/>
+      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="myoracle" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
       </Context>
       
-      </Host>
+      <Context docBase="day0102_d" path="/day0102_d" reloadable="true" source="org.eclipse.jst.jee.server:day0102_d">
+      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="myoracle" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
+      
+      </Context>
+      
+      
+      <Context docBase="day1228" path="/day1228" reloadable="true" source="org.eclipse.jst.jee.server:day1228">
+      
+      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="sist" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
+      </Context></Host>
     </Engine>
   </Service>
 </Server>
