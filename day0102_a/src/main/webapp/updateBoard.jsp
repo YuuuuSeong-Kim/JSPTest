@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h2>게시물 수정</h2>
-	<form action="updateBoard.do" method="post"
+	<form action="updateBoardOK.do" method="post"
 		enctype="multipart/form-data">
 		<table width="80%">
 			<tr>

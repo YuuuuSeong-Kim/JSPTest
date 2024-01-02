@@ -8,7 +8,7 @@
 </head>
 <body>
 <h2>게시물 삭제</h2>
-<form action="deleteBoard.do" method="post">
+<form action="deleteBoardOK.do" method="post">
 	<input type="hidden" name="no" value="<%=request.getParameter("no")%>">
 	삭제를 위해 비밀번호를 입력하세요 : <input type="text" name="pwd">
 	<input type="submit" value="삭제">
