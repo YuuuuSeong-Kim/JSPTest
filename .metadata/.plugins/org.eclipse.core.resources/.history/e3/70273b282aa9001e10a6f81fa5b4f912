@@ -89,7 +89,7 @@ public class BoardDAO {
 	
 	public ArrayList<BoardVO> findAll(){
 		ArrayList<BoardVO> list = new ArrayList<BoardVO>();
-		String sql = "select * from board order by no desc";
+		String sql = "select * from board";
 		try {
 			Connection conn = ConnectionProvider.getconConnection();
 			Statement stmt = conn.createStatement();
