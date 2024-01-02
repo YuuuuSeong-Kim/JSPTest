@@ -19,6 +19,7 @@ import com.sist.action.DetailBoardAction;
 import com.sist.action.InsertBoardAction;
 import com.sist.action.InsertBoardActionOK;
 import com.sist.action.ListBoardAction;
+import com.sist.action.SistAction;
 import com.sist.action.UpdateBoardAction;
 import com.sist.action.UpdateBoardActionOK;
 import com.sist.dao.BoardDAO;
@@ -47,25 +48,25 @@ public class SistController extends HttpServlet {
 		String cmd = uri.substring(uri.lastIndexOf("/")+1);
 		String viewPage = "";
 		BoardDAO dao = new BoardDAO();
-		
+		SistAction action;
 		if(cmd.equals("listBoard.do")) {
-			ListBoardAction action = new ListBoardAction();
+			action = new ListBoardAction();
 			viewPage = action.pro(request, response);
 		}
 		else if(cmd.equals("insertBoard.do")) {
-			InsertBoardAction action = new InsertBoardAction();
+			action = new InsertBoardAction();
 			viewPage = action.pro(request, response);
 		}
 		else if(cmd.equals("deleteBoard.do")) {
-			DeleteBoardAction action = new DeleteBoardAction();
+			action = new DeleteBoardAction();
 			viewPage = action.pro(request, response);
 		}
 		else if(cmd.equals("updateBoard.do")) {
-			UpdateBoardAction action = new UpdateBoardAction();
+			action = new UpdateBoardAction();
 			viewPage = action.pro(request, response);
 		}
 		else if(cmd.equals("detailBoard.do")) {
-			DetailBoardAction action = new DetailBoardAction();
+			action = new DetailBoardAction();
 			viewPage = action.pro(request, response);
 		}
 		
@@ -82,18 +83,19 @@ public class SistController extends HttpServlet {
 		String cmd = uri.substring(uri.lastIndexOf("/")+1);
 		BoardDAO dao = new BoardDAO();
 		String viewPage = "";
+		SistAction action;
 		if(cmd.equals("deleteBoardOK.do")) {
-			DeleteBoardActionOK action = new DeleteBoardActionOK();
+			action = new DeleteBoardActionOK();
 			viewPage = action.pro(request, response);
 		}
 		
 		else if(cmd.equals("updateBoardOK.do")) {
-			UpdateBoardActionOK action = new UpdateBoardActionOK();
+			action = new UpdateBoardActionOK();
 			viewPage = action.pro(request, response);
 		}
 		
 		else if(cmd.equals("insertBoardOK.do")) {
-			InsertBoardActionOK action = new InsertBoardActionOK();
+			action = new InsertBoardActionOK();
 			viewPage = action.pro(request, response);
 		} 
 		

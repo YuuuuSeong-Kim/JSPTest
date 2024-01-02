@@ -159,35 +159,16 @@
              Documentation at: /docs/config/valve.html
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
-
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <Context docBase="day1222_b" path="/day1222_b" reloadable="true" source="org.eclipse.jst.jee.server:day1222_b"/>
-      <Context docBase="day1227" path="/day1227" reloadable="true" source="org.eclipse.jst.jee.server:day1227"/>
-      <Context docBase="day1226" path="/day1226" reloadable="true" source="org.eclipse.jst.jee.server:day1226"/>
-      <Context docBase="day1221" path="/day1221" reloadable="true" source="org.eclipse.jst.jee.server:day1221"/>
-      <Context docBase="day1220" path="/day1220" reloadable="true" source="org.eclipse.jst.jee.server:day1220"/>
-      <Context docBase="day1221_a" path="/day1221_a" reloadable="true" source="org.eclipse.jst.jee.server:day1221_a"/>
-      <Context docBase="day1222" path="/day1222" reloadable="true" source="org.eclipse.jst.jee.server:day1222"/>
-      <Context docBase="day1226_a" path="/day1226_a" reloadable="true" source="org.eclipse.jst.jee.server:day1226_a"/>
-      <Context docBase="day1228" path="/day1228" reloadable="true" source="org.eclipse.jst.jee.server:day1228"/>
-      <Context docBase="day0102_a" path="/day0102_a" reloadable="true" source="org.eclipse.jst.jee.server:day0102_a">
-      	<Resource name="myoracle" auth="Container"
+      <Context docBase="day0102_c" path="/day0102_c" reloadable="true" source="org.eclipse.jst.jee.server:day0102_c">
+      <Resource name="myoracle" auth="Container"
               type="javax.sql.DataSource" driverClassName="oracle.jdbc.driver.OracleDriver"
               url="jdbc:oracle:thin:@localhost:1521:xe"
               username="c##madang" password="madang" maxTotal="20" maxIdle="10"
               maxWaitMillis="-1"/>
       </Context>
+      
       </Host>
     </Engine>
   </Service>

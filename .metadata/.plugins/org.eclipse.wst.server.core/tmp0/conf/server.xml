@@ -159,31 +159,12 @@
              Documentation at: /docs/config/valve.html
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
-
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day1222_b" path="/day1222_b" reloadable="true" source="org.eclipse.jst.jee.server:day1222_b"/>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day1227" path="/day1227" reloadable="true" source="org.eclipse.jst.jee.server:day1227"/>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day1226" path="/day1226" reloadable="true" source="org.eclipse.jst.jee.server:day1226"/>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day1221" path="/day1221" reloadable="true" source="org.eclipse.jst.jee.server:day1221"/>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day1220" path="/day1220" reloadable="true" source="org.eclipse.jst.jee.server:day1220"/>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day1221_a" path="/day1221_a" reloadable="true" source="org.eclipse.jst.jee.server:day1221_a"/>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day1222" path="/day1222" reloadable="true" source="org.eclipse.jst.jee.server:day1222"/>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day1226_a" path="/day1226_a" reloadable="true" source="org.eclipse.jst.jee.server:day1226_a"/>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day1228" path="/day1228" reloadable="true" source="org.eclipse.jst.jee.server:day1228"/>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day0102_a" path="/day0102_a" reloadable="true" source="org.eclipse.jst.jee.server:day0102_a">
-      	<Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="myoracle" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
+      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day0102_c" path="/day0102_c" reloadable="true" source="org.eclipse.jst.jee.server:day0102_c">
+      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="myoracle" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
       </Context>
+      
       </Host>
     </Engine>
   </Service>
