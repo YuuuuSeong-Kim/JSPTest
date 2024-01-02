@@ -1,0 +1,20 @@
+2023-12-20 09:03:40,996 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-12-21 09:03:43,334 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-12-22 08:37:42,521 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-12-26 10:41:45,685 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-12-26 16:07:04,137 [main] INFO  org.eclipse.jetty.server.Server - jetty-10.0.15; built: 2023-04-11T17:25:14.480Z; git: 68017dbd00236bb7e187330d7585a059610f661d; jvm 17.0.8.1+1
+2023-12-26 16:07:04,165 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2023-12-26 16:07:04,194 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1b6a0a49{/wse,null,AVAILABLE}
+2023-12-26 16:07:04,211 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@491a62ff{HTTP/1.1, (http/1.1)}{0.0.0.0:51278}
+2023-12-26 16:07:04,215 [main] INFO  org.eclipse.jetty.server.Server - Started Server@2981781a{STARTING}[10.0.15,sto=0] @19563902ms
+2023-12-26 18:02:37,150 [Framework stop - Equinox Container: a5dcf0ec-6b87-465d-b76a-4beb0cca8276] INFO  org.eclipse.jetty.server.Server - Stopped Server@2981781a{STOPPING}[10.0.15,sto=0]
+2023-12-26 18:02:37,156 [Framework stop - Equinox Container: a5dcf0ec-6b87-465d-b76a-4beb0cca8276] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@491a62ff{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+2023-12-26 18:02:37,172 [Framework stop - Equinox Container: a5dcf0ec-6b87-465d-b76a-4beb0cca8276] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1b6a0a49{/wse,null,STOPPED}
+2023-12-27 08:38:28,966 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-12-28 08:27:41,701 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-01-02 08:55:35,010 [Worker-10: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-01-02 11:14:21,981 [Worker-79: Remove Repositories] WARN  org.eclipse.jgit.lib.Repository - close() called when useCnt is already zero for Repository[C:\Users\sist\git\TestProject\.git]
+2024-01-02 11:16:19,700 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-01-02 11:31:45,077 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-01-02 11:36:58,727 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-01-02 11:38:59,254 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

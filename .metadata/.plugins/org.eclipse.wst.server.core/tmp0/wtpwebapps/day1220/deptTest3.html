@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.item{
+		list-style: none;
+		border: solid 1px;
+		margin: 4px;
+		width: 30px;
+		height: 30px;
+	}
+	
+	ul{
+		float: left;
+	}
+	
+	#dept{
+		border: solid 1px;
+		width: 500px;
+		height: 400px;
+		float: left;
+		margin: 30px;
+		font-size: 30px;
+	}
+	
+	.active{
+		background: red;
+		color: white;
+	}
+</style>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+	$(function(){
+		$.ajax({
+			url:"listDeptJson",
+			success:function(data){
+				$.each(data,function(){
+					$("ul").append($("<li></li>").html(this.dno).addClass("item").attr("dname",this.dname).attr("dloc",this.dloc));
+				})
+			}
+		});
+		
+		$(document).on("click","li",function(){
+			$("li").removeClass("active");
+			$("#dept").empty();
+			
+			$("#dept").append("부서 번호 : "+$(this).html()+"<br>");
+			$("#dept").append("부서명 : "+$(this).attr("dname")+"<br>");
+			$("#dept").append("지역 : "+$(this).attr("dloc"));
+			$(this).addClass("active");
+		})
+	});
+</script>
+</head>
+<body>
+	<ul>
+		
+	</ul>
+	<div id="dept"></div>
+</body>
+</html>

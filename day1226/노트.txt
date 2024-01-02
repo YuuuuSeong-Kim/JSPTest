@@ -1,0 +1,22 @@
+https://tomcat.apache.org/tomcat-9.0-doc/jndi-datasource-examples-howto.html#Oracle_8i,_9i_&_10g
+
+여기서 리소스 복사해서
+
+server.xml의 context부분에 붙여넣기
+
+
+      <Context docBase="day1226" path="/day1226" reloadable="true" source="org.eclipse.jst.jee.server:day1226">
+      <Resource 
+      		  name="myoracle" auth="Container"
+              type="javax.sql.DataSource" 
+              driverClassName="oracle.jdbc.driver.OracleDriver"
+              url="jdbc:oracle:thin:@localhost:1521:XE"
+              username="c##madang"
+              password="madang" 
+              maxTotal="20" 
+              maxIdle="10"
+              maxWaitMillis="-1"/>
+      </Context>
+      
+      
+      이런식으로 넣기

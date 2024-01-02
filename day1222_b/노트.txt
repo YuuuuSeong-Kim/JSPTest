@@ -1,0 +1,33 @@
+필터 적용
+	폴더 하나 만들어서 필터 적용시킬 애들 다 몰아 넣기
+	web.xml추가해서
+	  
+  <filter>
+  	<filter-name>login</filter-name>
+  	<filter-class>com.sist.filter.LoginFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>login</filter-name>
+  	<url-pattern>/member/*</url-pattern>
+  </filter-mapping>
+  
+  필터 문 추가하기
+  
+  필터 파일 추가해서
+  doFilter 메소드에
+  기능 추가한다.
+  우리가 사용하는건 HttpServletResponse, HttpServletRequest이기 때문에 형변환해서 사용해야한다.
+  
+  
+  ex)
+  		HttpSession session = ((HttpServletRequest)request).getSession();
+		String id = (String)session.getAttribute("idKey");
+		if(id==null) {
+			((HttpServletResponse)response).sendRedirect("../login.html");
+		}else {
+			// pass the request along the filter chain
+			chain.doFilter(request, response);
+		}
+		
+		chain.doFilter(request, response)는 원래 요청한 파일로 가게한다는 뜻

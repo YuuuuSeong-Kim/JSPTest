@@ -1,0 +1,7 @@
+package com.sist.action;
+
+public interface SistAction {
+	public String pro() {
+		
+	}
+}

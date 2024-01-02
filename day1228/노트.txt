@@ -1,0 +1,15 @@
+도서 목록 출력
+
+서비스명				서블릿클래스			모델							viewpage
+listBook.do			ListBook(get)		BookDAO.findAll()			listBook.jsp
+
+
+도서 상세보기
+서비스명				서블릿클래스			모델							viewpage
+detailBook.do		DetailBook(get)		BookDAO.detailBook()		detailBook.jsp
+
+
+도서 등록
+서비스명				서블릿클래스			모델							viewpage
+insertBook.do		InsertBook(get)									insertBook.jsp
+insertBook.do		InsertBook(post)	BookDAO.insertBook()		insertBookOK.jsp

@@ -1,0 +1,67 @@
+create table board(
+	no number primary key,
+	title varchar2(50),
+	writer varchar2(50),
+	pwd varchar2(20),
+	content varchar2(4000),
+	regdate date,
+	hit number,
+	fname varchar2(50)
+);
+
+insert into board values(1,'hello','tiger','1234','hello test', sysdate,0,'hello.txt');
+
+insert into board values(2,'hello2','kim','1234','hello test', sysdate,0,'hello2.txt');
+
+insert into board values(3,'hello3','lee','1234','hello test', sysdate,0,'hello3.txt');
+
+
+- 사용자가 서비스 요청을 jsp에게 하지 않고
+	서블릿에 요청을 하도록 하고
+	서블릿은 사용자의 요청에 따른 데이터처리를 하고
+	그 데이터를 상태유지 한다음
+	결과를 보여주기 위한
+	jsp로 이동하도록 한다
+	
+- jsp는 서블릿이 상태유지한
+	데이터를 보여주기 역할만 하도록 한다.
+
+게시물 목록
+
+서블릿이름(컨트롤러이름) view이름
+listBoard --> listBoard.jsp
+
+
+
+taglib 쓰는법
+https://archive.apache.org/dist/jakarta/taglibs/standard/binaries/
+가서
+jakarta-taglibs-standard-1.1.2.zip 다운해서 lib넣는다
+
+<%= b.getNo()%> 표현식
+${b.no}			표현언어
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> 넣어줘야함
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
