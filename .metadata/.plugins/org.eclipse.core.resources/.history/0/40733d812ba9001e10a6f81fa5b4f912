@@ -87,7 +87,6 @@ public class BoardDAO {
 		return re;
 	}
 	
-	
 	public ArrayList<BoardVO> findAll(){
 		ArrayList<BoardVO> list = new ArrayList<BoardVO>();
 		String sql = "select * from board order by no desc";
