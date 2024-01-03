@@ -52,10 +52,17 @@ public class SistController extends HttpServlet {
     	map = new HashMap<String, SistAction>();
     	try {
 			String path = config.getServletContext().getRealPath("WEB-INF"); 
-			//init에는 request가 없기 때문에 sist.properties의 실경로를 알아오기 위해서는 위의 명령어를 써야한다.(sist.properties는 WEB-INF안에 있다)
+			//init메소드에는 request가 없기 때문에 sist.properties의 실경로를 알아오기 위해서는 위의 명령어를 써야한다.(sist.properties는 WEB-INF안에 있다)
+			
 			FileReader fr = new FileReader(path+"/sist.properties");
+			//sist.properties 파일의 내용을 메모리로 읽어 들이기 위한 객체 생성
+			
 			Properties prop = new Properties();
-			prop.load(fr);//sist.properties의 내용을 key와 value로 알아서 나눠준다.
+			//sist.properties 파일의 내용을
+			//key와 value로 분리 시키기 위하여 Properties객체를 생성한다.
+			
+			prop.load(fr);//sist.properties의 내용을 key와 value로 알아서 나눠준다. load메소드가 그 역할을 함
+			
 			Iterator iter = prop.keySet().iterator(); //key를 하나씩 끄집어내옴
 			while(iter.hasNext()) {//hasNext는 boolean을 반환한다. 다음 값이 있으면 true 없으면 false
 				String key = (String)iter.next(); //key를 가져와서 key라는 변수에 저장한다.
@@ -64,6 +71,7 @@ public class SistController extends HttpServlet {
 				//value를 저장한 clsName으로 Class를 만든다, 이때 Object로 반환되기 때문에 SistAction(모든action의 최고 부모)으로 형변환해준다.
 				map.put(key,obj);//위의 key와 클래스객체를 map에 넣어준다
 			}
+			fr.close();//FileReader 도 close 해줘야한다
 		} catch (Exception e) {
 			System.out.println("예외발생:"+e.getMessage());
 		}
@@ -101,6 +109,7 @@ public class SistController extends HttpServlet {
 		//동일한 일처리가 발생 시 get과 post 방식으로 나누어질 수 있기에
 		//모든 일 처리는 get에 작성하고
 		//post에선 get을 호출하여 get방식이나 post방식이나 둘 다 get에서 처리되게 작성한다.
+		request.setCharacterEncoding("utf-8");
 		doGet(request, response);
 	}
 
