@@ -21,7 +21,7 @@
 			<tr>
 				<td>작성자 : </td>
 				<td>
-					<input type="text" name="writer" required="required">
+					<input type="text" name="writer" disabled="disabled" value="${userID }">
 				</td>
 			</tr>
 			<tr>

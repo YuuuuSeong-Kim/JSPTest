@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-	response.sendRedirect("login.do");
-%>
+${userID }님, 로그인하였습니다.
+<hr>
+<a href="member/listBoard.do">게시글목록</a>
 </body>
 </html>
