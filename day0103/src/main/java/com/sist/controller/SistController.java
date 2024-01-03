@@ -1,33 +1,15 @@
 package com.sist.controller;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Properties;
-import java.util.Set;
+import java.io.*;
+import java.util.*;
 
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletException;
+import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 
-import com.oreilly.servlet.MultipartRequest;
-import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
-import com.sist.action.DeleteBoardAction;
-import com.sist.action.DeleteBoardActionOK;
-import com.sist.action.DetailBoardAction;
-import com.sist.action.InsertBoardAction;
-import com.sist.action.InsertBoardActionOK;
-import com.sist.action.ListBoardAction;
-import com.sist.action.SistAction;
-import com.sist.action.UpdateBoardAction;
-import com.sist.action.UpdateBoardActionOK;
+import com.oreilly.servlet.*;
+import com.oreilly.servlet.multipart.*;
+import com.sist.action.*;
 import com.sist.dao.BoardDAO;
 import com.sist.vo.BoardVO;
 
@@ -91,13 +73,22 @@ public class SistController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//사용자의 uri 를 가져온다
 		String uri = request.getRequestURI();
-		
 		//맨 끝의 서비스명만 추출하여 cmd에 넣는다.
-		String cmd = uri.substring(uri.lastIndexOf("/")+1);
-		
+		String cmd = uri.substring(uri.indexOf("/",1)+1);
+		System.out.println(uri);
 		//해당 서비스명에 대한 객체를 불러와 pro 메소드를 실행하고
 		//viewPage에 다음으로 이동할 페이지의 이름을 저장한다.
 		String viewPage = map.get(cmd).pro(request, response);
+		HttpSession session = request.getSession();
+//		if(!cmd.equals("joinMember.do")
+//				&&!cmd.equals("joinMemberOK.do")
+//				&&!cmd.equals("loginMember.do")
+//				&&!cmd.equals("loginMemberOK.do")) {
+//			if(session.getAttribute("id")==null) {
+//				viewPage="loginError.jsp";
+//				request.setAttribute("msg", "로그인을 먼저 해주십시오");
+//			}
+//		}
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
 		dispatcher.forward(request, response);
 	}

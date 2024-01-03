@@ -23,6 +23,7 @@ public class BoardDAO {
 			pstmt.setInt(4, b.getNo());
 			pstmt.setString(5, b.getPwd());
 			re = pstmt.executeUpdate();
+			ConnectionProvider.close(conn, pstmt);
 		} catch (Exception e) {
 			System.out.println("예외발생:"+e.getMessage());
 		}
@@ -36,6 +37,7 @@ public class BoardDAO {
 			Connection conn = ConnectionProvider.getconConnection();
 			Statement stmt = conn.createStatement();
 			re = stmt.executeUpdate(sql);
+			ConnectionProvider.close(conn, stmt);
 		} catch (Exception e) {
 			System.out.println("예외발생:"+e.getMessage());
 		}
@@ -60,6 +62,7 @@ public class BoardDAO {
 				vo.setFname(rs.getString(8));
 				vo.setIp(rs.getString(9));
 			}
+			ConnectionProvider.close(conn, stmt, rs);
 		} catch (Exception e) {
 			System.out.println("예외발생:"+e.getMessage());
 		}
