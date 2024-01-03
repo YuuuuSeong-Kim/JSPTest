@@ -22,7 +22,7 @@ public class JoinMemberActionOK implements SistAction {
 			int re = dao.joinMember(vo);
 			String viewPage = "joinMemberOK.jsp";
 			if(re!=1) {
-				viewPage = "error.jsp";
+				viewPage = "loginError.jsp";
 				request.setAttribute("msg","회원가입에 실패하였습니다.");
 			}
 			return viewPage;

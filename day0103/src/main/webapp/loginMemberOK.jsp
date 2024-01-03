@@ -8,7 +8,7 @@
 </head>
 <body>
 <%
-	response.sendRedirect("listBoard.do");
+	response.sendRedirect("member/listBoard.do");
 %>
 
 </body>

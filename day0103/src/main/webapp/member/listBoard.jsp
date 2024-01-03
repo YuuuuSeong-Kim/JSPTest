@@ -33,6 +33,6 @@
 	</c:forEach>
 </table>
 <a href="insertBoard.do">게시글 등록</a><br>
-<a href="logoutMember.do">로그아웃</a>
+<a href="../logoutMember.do">로그아웃</a>
 </body>
 </html>

@@ -75,7 +75,6 @@ public class SistController extends HttpServlet {
 		String uri = request.getRequestURI();
 		//맨 끝의 서비스명만 추출하여 cmd에 넣는다.
 		String cmd = uri.substring(uri.indexOf("/",1)+1);
-		System.out.println(uri);
 		//해당 서비스명에 대한 객체를 불러와 pro 메소드를 실행하고
 		//viewPage에 다음으로 이동할 페이지의 이름을 저장한다.
 		String viewPage = map.get(cmd).pro(request, response);

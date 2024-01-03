@@ -10,6 +10,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpFilter;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -44,7 +45,7 @@ public class LoginFilter extends HttpFilter implements Filter {
 		if(session.getAttribute("id")!=null) {
 			chain.doFilter(request, response);
 		}else {
-			
+			((HttpServletResponse)response).sendRedirect("/day0103/loginMember.do");
 		}
 	}
 

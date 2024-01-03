@@ -8,6 +8,6 @@
 </head>
 <body>
 <h2>회원가입 완료</h2>
-<a href="listBoard.do">게시글 목록</a>
+<a href="loginMember.do">로그인 화면</a>
 </body>
 </html>
