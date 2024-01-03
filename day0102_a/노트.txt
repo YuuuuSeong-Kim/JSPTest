@@ -18,7 +18,7 @@ MVC 패턴
 사용자가 jsp에 직접 서비스를 요청하는 것이 아니라
 Controller역할을 하는 서블릿에게 요청을 하고
 
-그 요청에 따른 일처리를 위한 별도의 자바클래서(Model)이 일을 수행하고
+그 요청에 따른 일처리를 위한 별도의 자바클래스(Model)이 일을 수행하고
 
 그 처리된 결과에 따라
 보여주기 역할은(View) jsp가 수행하는 방식이다.
@@ -41,9 +41,9 @@ C : Controller		사용자의 요청을 받아들이는 서블릿을 말한다.
 
 Front Controller 	사용자의 모든 요청을 받아들이는 서블릿을 말한다.
 
-SistController
+SistController		서비스 명에 따라 각기 다른 객체로 생성되게 만드는 서블릿
 
-listBoard.do
+listBoard.do		서비스명들
 insertBoard.do
 insertBoardOK.do
 updateBoard.do

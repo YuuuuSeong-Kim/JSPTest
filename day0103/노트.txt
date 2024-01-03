@@ -1,0 +1,23 @@
+다음은 Front Controller에서
+사용자가 요청할 서비스명과 그에 따른 일처리를 위한 객체를 생성하여
+map에 등록하는 부분이다
+만약 새로운 서비스가 추가된다면 그때마다 map에 직접 등록하는 코드가 필요하다
+또, 더이상 필요하지 않는 서비스가 있다면 직접 map에서 제거해야 하는데
+이것은 매우 번거로운 일이다.
+
+만약, 사용자의 요청별 처리하는 클래스에 대한
+설정파일을 따로 두고 그 파일의 내용을 읽어 들여서
+map에 등록하도록 한다면
+새로운 서비스가 추가되거나 제거될때에 설정파일만 수정하면되고
+컨트롤러를 직접 수정하지 않아도 될 것입니다.
+
+map = new HashMap<String, SistAction>();
+
+map.put("listBoard.do", new ListBoardAction());
+map.put("insertBoard.do", new InsertBoardAction());
+map.put("deleteBoard.do", new DeleteBoardAction());
+map.put("updateBoard.do", new UpdateBoardAction());
+map.put("detailBoard.do", new DetailBoardAction());
+map.put("deleteBoardOK.do", new DeleteBoardActionOK());
+map.put("updateBoardOK.do", new UpdateBoardActionOK());
+map.put("insertBoardOK.do", new InsertBoardActionOK());
