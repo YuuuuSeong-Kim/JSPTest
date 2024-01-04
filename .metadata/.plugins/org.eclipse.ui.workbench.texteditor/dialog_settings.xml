@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="generated"/>
 			<item value="css"/>
 			<item value="sendRedirect"/>
 			<item value="Book"/>
