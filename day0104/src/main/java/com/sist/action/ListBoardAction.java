@@ -9,10 +9,10 @@ public class ListBoardAction implements SistAction {
 	@Override
 	public String pro(HttpServletRequest request, HttpServletResponse response) {
 		BoardDAO dao = new BoardDAO();
-		int pageNum = Integer.parseInt(request.getParameter("pageNum"));
 		int totalPage = dao.getTotalPage();
-		if(request.getParameter("pageNum")==null) {
-			pageNum = 1;
+		int pageNum = 1;
+		if(request.getParameter("pageNum")!=null) {
+			pageNum = Integer.parseInt(request.getParameter("pageNum"));
 		}
 		if(pageNum>totalPage) {
 			pageNum=totalPage;

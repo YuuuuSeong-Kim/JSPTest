@@ -9,8 +9,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"/>
 <script type="text/javascript">
-	console.log(${totalPage})
+$(function(){
+	$(document).on("click","div",function(){
+		$("div").css("background","red");
+	})
+})
 </script>
 <title>Insert title here</title>
 </head>
@@ -45,7 +50,7 @@
 	</c:forEach>
 </table>
 <c:forEach var="i" begin="1" end="${totalPage }">
-	&nbsp;<a href="listBoard.do?pageNum=${i }">${i }</a>&nbsp;
+	&nbsp;<a href="listBoard.do?pageNum=${i }" ><div class="pageNation">${i }</div></a>&nbsp;
 </c:forEach><br>
 <a href="insertBoard.do">게시글 등록</a>
 </body>
