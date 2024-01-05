@@ -189,7 +189,10 @@
       <Context docBase="day0105" path="/day0105" reloadable="true" source="org.eclipse.jst.jee.server:day0105">
       <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="myoracle" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
       </Context>
-      </Host>
+      <Context docBase="day0105_goods" path="/day0105_goods" reloadable="true" source="org.eclipse.jst.jee.server:day0105_goods">
+      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="myoracle" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
+
+      </Context></Host>
     </Engine>
   </Service>
 </Server>
