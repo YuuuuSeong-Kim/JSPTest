@@ -43,10 +43,111 @@ public class testMain {
         
         ArrayList<JSONObject> arr = (ArrayList<JSONObject>) items.get("item");
         
-        for (int i = 0; i < arr.size(); i++) {
+        for (int i = 1; i <= arr.size(); i++) {
            System.out.println(i + "번쨰");
            HashMap<String, String> map = (HashMap<String, String>) arr.get(i);
-           System.out.println(map.get("jmfldnm"));
+           Dao dao = new Dao();
+       	int e_id=i;
+    	String qualgbcd;
+    	String qualgbnm;
+    	int seriescd;
+    	String seriesnm;
+    	int jmcd;
+    	String jmfldnm;
+    	int y_id;
+    	int obligfldcd;
+    	String obligfldnm;
+    	int mdobligfldcd;
+    	String mdobligfldnm;
+    	String detail;
+    	
+    	if((String)map.get("qualgbcd")==null) {
+    		qualgbcd = "-1";
+    	}else {
+    		qualgbcd = map.get("qualgbcd");
+    	}
+    	
+    	if((String)map.get("qualgbnm")==null) {
+    		qualgbnm = "-1";
+    	}else {
+    		qualgbnm = map.get("qualgbnm");
+    	}
+    	
+    	if((String)map.get("seriescd")==null) {
+    		seriescd = -1;
+    	}else {
+    		seriescd = Integer.parseInt(map.get("seriescd"));
+    	}
+    	
+    	if((String)map.get("seriesnm")==null) {
+    		seriesnm = "-1";
+    	}else {
+    		seriesnm = map.get("seriesnm");
+    	}
+    	
+    	if((String)map.get("jmcd")==null) {
+    		jmcd = -1;
+    	}else {
+    		jmcd = Integer.parseInt(map.get("jmcd"));
+    	}
+    	
+    	if((String)map.get("jmfldnm")==null) {
+    		jmfldnm = "-1";
+    	}else {
+    		jmfldnm = map.get("jmfldnm");
+    	}
+    	
+    	if((String)map.get("y_id")==null) {
+    		y_id = -1;
+    	}else {
+    		y_id = Integer.parseInt(map.get("y_id"));
+    	}
+    	
+    	
+    	if((String)map.get("obligfldcd")==null) {
+    		obligfldcd = -1;
+    	}else {
+    		obligfldcd = Integer.parseInt(map.get("obligfldcd"));
+    	}
+    	
+    	if((String)map.get("obligfldnm")==null) {
+    		obligfldnm = "-1";
+    	}else {
+    		obligfldnm = map.get("obligfldnm");
+    	}
+    	
+    	if((String)map.get("mdobligfldcd")==null) {
+    		mdobligfldcd = -1;
+    	}else {
+    		mdobligfldcd = Integer.parseInt(map.get("mdobligfldcd"));
+    	}
+    	
+    	if((String)map.get("mdobligfldnm")==null) {
+    		mdobligfldnm = "-1";
+    	}else {
+    		mdobligfldnm = map.get("mdobligfldnm");
+    	}
+    	
+    	if((String)map.get("detail")==null) {
+    		detail = "-1";
+    	}else {
+    		detail = map.get("detail");
+    	}
+    	
+           VO vo = new VO(e_id
+        		   , qualgbcd
+        		   , qualgbnm
+        		   , seriescd
+        		   , seriesnm
+        		   ,jmcd
+        		   , jmfldnm
+        		   , y_id
+        		   ,obligfldcd
+        		   , obligfldnm
+        		   , mdobligfldcd
+        		   ,mdobligfldnm
+        		   , detail);
+           dao.insertApi(vo);
         }
         
         rd.close();
