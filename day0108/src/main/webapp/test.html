@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+	$(function(){
+		$("#category").change(function(){
+			if($(this).val()=="price"){
+				$("#op").css("display","")
+			}else{
+				$("#op").css("display","none");
+			}
+		})
+		$.ajax({
+			url:"listPublisher.do",
+			success:function(data){
+				var select = $("<select></select>");
+				select.append($("<option></option>").html($(this)));
+				$("form").append(select);
+			}
+		})
+	})
+</script>
+</head>
+<body>
+<select name="category">
+	<option value="bookname">도서명</option>
+	<option value="publisher">출판사</option>
+</select>
+</body>
+</html>

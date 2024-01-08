@@ -27,6 +27,8 @@ C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3990274689.inde
 \day0103\src\main\java
 C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2823596486.index
 \day0102_a\src\main\java
+C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1482479259.index
+\day0108\src\main\java
 C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3653664244.index
 \day0104\src\main\java
 C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3906882179.index
@@ -53,6 +55,8 @@ C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1785727426.inde
 \day0102\src\main\java
 C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3924423534.index
 \day0105_goods\src\main\java
+C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1896256179.index
+\day0108_test\src\main\java
 C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2371675899.index
 \day1226_a\src\main\java
 C:\jspTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3889968267.index

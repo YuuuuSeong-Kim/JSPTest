@@ -1,0 +1,24 @@
+싱글톤 패턴(singleton pattern)
+
+ListBookAction
+BookDAO dao = new BookDAO();
+
+InsertBookAction
+BookDAO dao = new BookDAO();
+
+DetailBookAction
+BookDAO dao = new BookDAO();
+
+일반적으로 객체가 필요하면
+필요한 곳에서 위의 처럼
+new 연산자에 의해서 객체를 생성하고 사용해야 한다.
+
+각각의 객체는 서로다른 객체이다.
+만약 그 클래스가 속성을 갖고 있는 클래스라면
+위의 처럼 각각의 객체를 생성해야 마땅하지만
+
+DAO처럼
+속성이 없고 메소드 만으로 구성된 클래스는 굳이 필요할 때 마다
+따로 객체를 생성할 필요가 없고
+하나의 객체만 만들어 두고 사용하도록 한다.
+==> 이러한 방식을 싱글턴 패턴이라고 한다.
