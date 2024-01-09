@@ -20,6 +20,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\jspTest\SecondTP-develop"/>
+			<item value="C:\jspTest\tp\tp"/>
 			<item value="C:\jspTest\day0102"/>
 			<item value="C:\jspTest"/>
 		</list>

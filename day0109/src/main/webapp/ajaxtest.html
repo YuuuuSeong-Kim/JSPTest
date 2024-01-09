@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script>
+		$(function () {
+			$.ajax({
+				url: "listJob.do",
+				success : function(data){
+					$.each(data, function(){
+						var select = $("#e_job");
+						select.append($("<option></option>").html(this).attr("value",this));
+					})
+				}
+			})
+			$("#keyword").empty
+		})
+		
+	</script>
+</head>
+
+<body>
+<input disabled>
+</body>
+
+</html>

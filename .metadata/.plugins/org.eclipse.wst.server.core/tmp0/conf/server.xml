@@ -161,46 +161,29 @@
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
       
       
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day0102_c" path="/day0102_c" reloadable="true" source="org.eclipse.jst.jee.server:day0102_c">
-      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="myoracle" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
-      </Context>
-      
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day0102_d" path="/day0102_d" reloadable="true" source="org.eclipse.jst.jee.server:day0102_d">
-      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="myoracle" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
-      
-      </Context>
       
       
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day1228" path="/day1228" reloadable="true" source="org.eclipse.jst.jee.server:day1228">
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day0109" path="/day0109" reloadable="true" source="org.eclipse.jst.jee.server:day0109">
       <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="sist" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
       </Context>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day0103" path="/day0103" reloadable="true" source="org.eclipse.jst.jee.server:day0103">
-      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="myoracle" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
-      </Context>
-      
-      
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day0103_a" path="/day0103_a" reloadable="true" source="org.eclipse.jst.jee.server:day0103_a">
-      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="asdasd" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
-      </Context>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day0104" path="/day0104" reloadable="true" source="org.eclipse.jst.jee.server:day0104">
-      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="myoracle" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
-      </Context>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day0105" path="/day0105" reloadable="true" source="org.eclipse.jst.jee.server:day0105">
-      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="myoracle" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
-      </Context>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day0105_goods" path="/day0105_goods" reloadable="true" source="org.eclipse.jst.jee.server:day0105_goods">
-      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="myoracle" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
-
-      </Context>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day0108" path="/day0108" reloadable="true" source="org.eclipse.jst.jee.server:day0108">
-      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="myoracle" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
-      </Context>
-      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day0108_test" path="/day0108_test" reloadable="true" source="org.eclipse.jst.jee.server:day0108_test">
-      
-      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="sist" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
-      </Context>
-      </Host>
+      <Context docBase="C:\jspTest\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SecondTP-develop" path="/tp" reloadable="true" source="org.eclipse.jst.jee.server:SecondTP-develop"/></Host>
     </Engine>
   </Service>
 </Server>
