@@ -99,7 +99,7 @@
         <nav class="menuBar">
             <ul class="gnb">
                 <li><a href="#">자격증정보</a></li>
-                <li><a href="#">스터디모집</a></li>
+                <li><a href="studyList.do">스터디모집</a></li>
                 <li><a href="#">마이페이지</a></li>
                 <li><a href="#">고객센터</a></li>
             </ul>

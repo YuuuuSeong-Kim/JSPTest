@@ -183,7 +183,13 @@
       <Context docBase="day0109" path="/day0109" reloadable="true" source="org.eclipse.jst.jee.server:day0109">
       <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="sist" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
       </Context>
-      <Context docBase="SecondTP-develop" path="/tp" reloadable="true" source="org.eclipse.jst.jee.server:SecondTP-develop"/></Host>
+      <Context docBase="SecondTP-develop" path="/tp" reloadable="true" source="org.eclipse.jst.jee.server:SecondTP-develop"/><Context docBase="day0108_test" path="/day0108_test" reloadable="true" source="org.eclipse.jst.jee.server:day0108_test"/>
+      
+      <Context docBase="day0110" path="/day0110" reloadable="true" source="org.eclipse.jst.jee.server:day0110">
+      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="sist" password="madang" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##madang"/>
+      
+      </Context>
+      </Host>
     </Engine>
   </Service>
 </Server>

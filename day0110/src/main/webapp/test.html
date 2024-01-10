@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+	$.ajax({
+		url:"listDname.do",
+		success:function(data){
+			$.each(data,function(){
+				var select = $("dname");
+				select.append($("<option></option>").html(this));
+			})
+		}
+	})
+</script>
+</head>
+<body>
+
+</body>
+</html>

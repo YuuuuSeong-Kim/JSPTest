@@ -1,0 +1,23 @@
+** 상태유지 기법
+세션		:	사용자의 상태를 서버에 기록하는 방식
+쿠키		:	사용자의 상태를 클라이언트(브라우저)에 기록하는 방식
+
+세션은 내장객체가 있지만
+쿠키는 직접 생성하고 사용해야 한다.
+
+쿠키생성
+Cookie(String name, String value)
+
+쿠키기록
+response.addCookie(Cookie cookie)
+
+쿠키읽어오기
+Cookie[]	request.getCookied() <-- 배열을 반환한다
+
+
+------------------------------------------------------------------------------------
+
+jsp가 아닌 html(JavaScript)에서 상태유지 하고 싶을 때
+
+localStorage		==> 지우기 전까지 계속 유지
+sessionStorage		==> 브라우저 닫기 전까지 유지

@@ -14,6 +14,12 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script type="text/javascript">
 	$(function(){
+		function popupOpen(){	var popUrl = "testbox.jsp";
+		var popOption = "width=370, height=360, resizable=no, scrollbars=no, status=no;"; 
+		window.open(popUrl,"",popOption);
+			}
+		
+		popupOpen();
 		$("#cname").change(function(){
 			var v = $(this).val();
 			if(v == "price"){
